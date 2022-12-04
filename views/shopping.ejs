@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f5f5f5;
+    z-index: 9;
+}
+
+.nav{
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-logo{
+    height: 60px;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    width: 500px;
+    display: flex;
+}
+
+.search-box{
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #d1d1d1;
+    text-transform: capitalize;
+    background: none;
+    color: #a9a9a9;
+    outline: none;
+}
+
+.search-btn{
+    width: 20%;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #383838;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.search-box::placeholder{
+    color: #a9a9a9;
+}
+
+.nav-items a{
+    margin-left: 20px;
+}
+
+.nav-items a img{
+    width: 30px;
+}
+.links-container{
+    width: 100%;
+    display: flex;
+    padding: 10px 10vw;
+    justify-content: center;
+    list-style: none;
+    border-top: 1px solid #d1d1d1;
+}
+
+.link{
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #383838;
+    opacity: 0.5;
+    transition: .5s;
+}
+
+.link:hover{
+    opacity: 1;
+}
+.hero-section{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-image: url('https://i.ytimg.com/vi/O8XLHytqJ8I/maxresdefault.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    background-color: black;
+    color:white;
+}
+
+.product{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.product-category{
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+div.gallery {
+    margin: 5px;
+  display: inline-block;
+    border: 1px solid #ccc;
+    width: 180px;
+  position:relative;
+  font-family: helvetica;
+  
+}
+
+div.gallery:hover {
+    border: 1px solid black;
+}
+
+div.gallery img {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+div.price {
+    padding: 15px;
+    text-align: center;
+  background-color:white;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    padding: 40px 10vw;
+    padding-bottom: 80px;
+    background: #383838;
+}
+
+.footer-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-content .logo{
+    height: 160px;
+}
+
+.footer-ul-container{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category{
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    list-style: none;
+}
+
+.category-title{
+    grid-column: span 2;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.category .footer-link{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-link:hover{
+    color: #fff;
+}
+    </style>
+ <div method="GET" action="shoppingSubmit"></div>
+<nav class="navbar">
+    <div class="nav">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuWxqcWtv-oul__3X-nLQ5enLumE8A7bb4kA&usqp=CAU" class="brand-logo" alt="">
+        <div class="nav-items">
+            <div class="search">
+                <input type="text" class="search-box" placeholder="search brand, product">
+                <button class="search-btn">search</button>
+            </div>
+            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnjAgjv-todpAjXjYG2l3fvEKtG5iOeQZS8w&usqp=CAU" alt=""></a>
+            <a href="#"><img src="https://www.spotteron.net/images/icons/user60.png" alt=""></a>
+        </div>
+    </div>
+    </nav>
+    <ul class="links-container">
+        <li class="link-item"><a href="login" class="link">login</a></li>
+        <li class="link-item"><a href="signup" class="link">signup</a></li>
+        <li class="link-item"><a href="women" class="link">women</a></li>
+        <li class="link-item"><a href="men" class="link">men</a></li>
+    </ul>
+    <!-- hero section -->
+ <header class="hero-section">
+    <div class="content">
+</header>
+<section class="product">
+    <h2 align="center" class="product-category">Best Selling</h2>
+    <div class="gallery">
+        <a target="_blank" href="https://th.bing.com/th/id/OIP.py0_KipzlH5EhFZPGzFqpAHaQm?w=156&h=350&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+          <img src="https://th.bing.com/th/id/OIP.py0_KipzlH5EhFZPGzFqpAHaQm?w=156&h=350&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="top" width="300" height="200">
+        </a>
+        <div class="price">Ethnic Wear</div>
+      </div>
+      
+  <div class="gallery">
+        <a target="_blank" href="https://th.bing.com/th/id/OIP.sYVzo5YUePSxEFGKkt2TUAHaKv?pid=ImgDet&w=207&h=299&c=7&dpr=1.3">
+          <img src="https://th.bing.com/th/id/OIP.sYVzo5YUePSxEFGKkt2TUAHaKv?pid=ImgDet&w=207&h=299&c=7&dpr=1.3" alt="pants" width="300" height="200">
+        </a>
+        <div class="price">Western Wear </div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="https://i5.walmartimages.com/asr/cf7e2427-ad7f-4ec6-b049-0f265809a6b8_1.39896d8f57365b9833d5ae131f1613fa.jpeg">
+          <img src="https://i5.walmartimages.com/asr/cf7e2427-ad7f-4ec6-b049-0f265809a6b8_1.39896d8f57365b9833d5ae131f1613fa.jpeg" alt="pants" width="300" height="200">
+        </a>
+        <div class="price">Maxi Dress </div>
+      </div>
+           
+      <div class="gallery">
+        <a target="_blank" href="https://th.bing.com/th/id/OIP.J7OFOczv5W_IQ9vKrNeJdQHaLH?w=182&h=273&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+          <img src="https://th.bing.com/th/id/OIP.J7OFOczv5W_IQ9vKrNeJdQHaLH?w=182&h=273&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="pants" width="300" height="200">
+        </a>
+        <div class="price">Suits </div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="https://th.bing.com/th/id/OIP.C7kbg5C3Yxza_1sC_GvGwgHaQm?w=156&h=349&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+          <img src="https://th.bing.com/th/id/OIP.C7kbg5C3Yxza_1sC_GvGwgHaQm?w=156&h=349&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="pants" width="300" height="200">
+        </a>
+        <div class="price">Ethnic Wear</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="https://th.bing.com/th/id/OIP.9Pv5-hx4cPMn1tmP0ZHAngHaJ4?w=182&h=243&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+          <img src="https://th.bing.com/th/id/OIP.9Pv5-hx4cPMn1tmP0ZHAngHaJ4?w=182&h=243&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="pants" width="300" height="200">
+        </a>
+        <div class="price">Casual Wear </div>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="https://th.bing.com/th/id/OIP.PccNMevn5cVkMapZ-unvrgHaK-?w=182&h=270&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+          <img src="https://th.bing.com/th/id/OIP.PccNMevn5cVkMapZ-unvrgHaK-?w=182&h=270&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="pants" width="300" height="200">
+        </a>
+        <div class="price"> Safari Jackets </div>
+      </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeNU8u0lBFnnl7VlTzcfc1pGGx1YXiQKgzkg&usqp=CAU" class="logo" alt="">
+        <div class="footer-ul-container">
+            <ul class="category">
+                <li class="category-title">men</li>
+                <li><a href="#" class="footer-link">t-shirts</a></li>
+                <li><a href="#" class="footer-link">sweatshirts</a></li>
+                <li><a href="#" class="footer-link">shirts</a></li>
+                <li><a href="#" class="footer-link">jeans</a></li>
+                <li><a href="#" class="footer-link">trousers</a></li>
+                <li><a href="#" class="footer-link">shoes</a></li>
+                <li><a href="#" class="footer-link">casuals</a></li>
+                <li><a href="#" class="footer-link">formals</a></li>
+                <li><a href="#" class="footer-link">sports</a></li>
+                <li><a href="#" class="footer-link">watch</a></li>
+            </ul>
+            <ul class="category">
+                <li class="category-title">women</li>
+                <li><a href="#" class="footer-link">t-shirts</a></li>
+                <li><a href="#" class="footer-link">sweatshirts</a></li>
+                <li><a href="#" class="footer-link">shirts</a></li>
+                <li><a href="#" class="footer-link">jeans</a></li>
+                <li><a href="#" class="footer-link">trousers</a></li>
+                <li><a href="#" class="footer-link">shoes</a></li>
+                <li><a href="#" class="footer-link">casuals</a></li>
+                <li><a href="#" class="footer-link">formals</a></li>
+                <li><a href="#" class="footer-link">sports</a></li>
+                <li><a href="#" class="footer-link">watch</a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="footer-title">about company</p>
+    <p class="info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat tempore ad suscipit, eos eius quisquam sed optio nisi quaerat fugiat ratione et vero maxime praesentium, architecto minima reiciendis iste quo deserunt assumenda alias ducimus. Ullam odit maxime id voluptates rerum tenetur corporis laboriosam! Cum error ipsum laborum tempore in rerum necessitatibus nostrum nobis modi! Debitis adipisci illum nemo aperiam sed, et accusamus ut officiis. Laborum illo exercitationem quo culpa reprehenderit excepturi distinctio tempore cupiditate praesentium nisi ut iusto, assumenda perferendis facilis voluptas autem fuga sunt ab debitis voluptatum harum eum. Asperiores, natus! Est deserunt incidunt quasi placeat omnis, itaque harum?</p>
+    <p class="info">support emails - help@clothing.com, customersupport@clothing.com</p>
+    <p class="info">telephone - 180 00 00 001, 180 00 00 002</p>
+    <div class="footer-social-container">
+        <div>
+            <a href="#" class="social-link">terms & services</a>
+            <a href="#" class="social-link">privacy page</a>
+        </div>
+        <div>
+            <a href="#" class="social-link">instagram</a>
+            <a href="#" class="social-link">facebook</a>
+            <a href="#" class="social-link">twitter</a>
+        </div>
+    </div>
+    <p class="footer-credit">Clothing, Best apparels online store</p>
+</footer>
+
+    </html>
